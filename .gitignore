@@ -1,0 +1,12 @@
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment variables / secrets
+.env
+
+# Vector store / local DB files
+chroma_db/
+*.sqlite3
+
+# OS junk
+.DS_Store
