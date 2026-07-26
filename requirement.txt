@@ -1,0 +1,7 @@
+langchain
+langchain-groq
+langchain-community
+youtube-transcript-api>=1.0.0
+chromadb
+sentence-transformers
+tiktoken
