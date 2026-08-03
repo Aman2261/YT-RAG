@@ -1,6 +1,6 @@
 # YouTube video summarizer + Q&A
 
-A small RAG (retrieval-augmented generation) application that takes a YouTube
+A small RAG (retrieval-augmented generation) Project that takes a YouTube
 video URL, generates a summary, and lets you ask follow-up questions about
 the video's content — with answers grounded in the transcript and cited by
 timestamp.
@@ -44,47 +44,6 @@ timestamp.
   question about "how performance scales" can retrieve a chunk about
   "time complexity" even with no shared keywords.
 
-## Setup
-
-1. Clone this repo and install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-2. Get a free API key from [console.groq.com](https://console.groq.com)
-   and set it as an environment variable:
-   ```bash
-   cp .env.example .env
-   # then edit .env and add your key
-   ```
-   Or export it directly:
-   ```bash
-   export GROQ_API_KEY=your_key_here
-   ```
-
-3. Run the app:
-   ```bash
-   streamlit run app.py
-   ```
-
-4. Paste a YouTube URL, click **Summarize**, then ask questions in the chat
-   box below the summary.
-
-## Project structure
-
-```
-├── main.py           # Core pipeline: transcript, chunking, embeddings, summarization, Q&A
-├── app.py             # Streamlit UI
-├── requirements.txt
-├── .env.example
-└── README.md
-```
-
-`main.py` can also be run standalone from the command line for quick
-testing without the UI:
-```bash
-python main.py
-```
 
 ## Known limitations
 
@@ -96,7 +55,7 @@ python main.py
 - Timestamp matching for chunks is approximate (based on matching the
   first few words of a chunk back to its original transcript segment).
 
-## Possible extensions
+## Possible extensions in Future
 
 - Add a Whisper fallback for videos without captions.
 - Persist the vector store per video so re-visiting a video skips
