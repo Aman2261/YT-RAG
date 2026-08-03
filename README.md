@@ -1,6 +1,6 @@
 # YouTube video summarizer + Q&A
 
-A small RAG (retrieval-augmented generation) Project that takes a YouTube
+A RAG (retrieval-augmented generation) Project that takes a YouTube
 video URL, generates a summary, and lets you ask follow-up questions about
 the video's content — with answers grounded in the transcript and cited by
 timestamp.
